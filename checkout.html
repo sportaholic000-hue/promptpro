@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Get Instant Access — PromptPro, AI Gateway, QuoteCop</title>
+  <meta name="description" content="AI tools that actually work. PromptPro ($9), AI Gateway Pro ($19/mo), QuoteCop (free). Direct checkout."/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0f; --surface: #13131a; --border: #1e1e2e;
+      --accent: #7c3aed; --accent2: #06b6d4; --green: #10b981;
+      --text: #e2e8f0; --muted: #64748b; --white: #ffffff;
+    }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+    .hero { text-align: center; padding: 64px 24px 40px; background: radial-gradient(ellipse at top, #1a0a2e 0%, var(--bg) 60%); }
+    .badge { display: inline-block; background: rgba(124,58,237,0.2); border: 1px solid rgba(124,58,237,0.4); color: #a78bfa; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 16px; border-radius: 100px; margin-bottom: 24px; }
+    h1 { font-size: clamp(28px, 5vw, 52px); font-weight: 800; color: var(--white); line-height: 1.15; margin-bottom: 16px; }
+    h1 span { color: #a78bfa; }
+    .subtitle { font-size: 18px; color: var(--muted); max-width: 520px; margin: 0 auto 48px; line-height: 1.6; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto; padding: 0 24px 80px; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; position: relative; transition: border-color 0.2s, transform 0.2s; }
+    .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .card.featured { border-color: var(--accent); background: linear-gradient(135deg, #13131a 0%, #1a1030 100%); }
+    .card-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--accent); color: white; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; padding: 4px 14px; border-radius: 100px; white-space: nowrap; }
+    .card-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 20px; }
+    .card-icon.purple { background: rgba(124,58,237,0.15); }
+    .card-icon.cyan { background: rgba(6,182,212,0.15); }
+    .card-icon.green { background: rgba(16,185,129,0.15); }
+    .card h2 { font-size: 22px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+    .card p { font-size: 14px; color: var(--muted); line-height: 1.6; margin-bottom: 24px; }
+    .features { list-style: none; margin-bottom: 28px; }
+    .features li { font-size: 14px; color: var(--text); padding: 6px 0; display: flex; align-items: center; gap: 8px; }
+    .features li::before { content: "\2713"; color: var(--green); font-weight: 700; flex-shrink: 0; }
+    .price-block { margin-bottom: 20px; }
+    .price { font-size: 36px; font-weight: 800; color: var(--white); }
+    .price-sub { font-size: 13px; color: var(--muted); margin-top: 2px; }
+    .btn { display: block; width: 100%; padding: 14px 24px; border-radius: 10px; font-size: 15px; font-weight: 700; text-align: center; text-decoration: none; cursor: pointer; border: none; transition: opacity 0.2s, transform 0.1s; }
+    .btn:active { transform: scale(0.98); }
+    .btn-primary { background: var(--accent); color: white; }
+    .btn-primary:hover { opacity: 0.9; }
+    .btn-secondary { background: rgba(124,58,237,0.12); color: #a78bfa; border: 1px solid rgba(124,58,237,0.3); }
+    .btn-secondary:hover { background: rgba(124,58,237,0.2); }
+    .btn-outline { background: transparent; color: var(--text); border: 1px solid var(--border); }
+    .btn-outline:hover { border-color: var(--muted); }
+    .guarantee { text-align: center; padding: 40px 24px; background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin-bottom: 60px; }
+    .guarantee h3 { font-size: 20px; color: var(--white); margin-bottom: 8px; }
+    .guarantee p { color: var(--muted); font-size: 14px; }
+    .alt-payments { text-align: center; padding: 0 24px 60px; }
+    .alt-payments h3 { font-size: 16px; color: var(--muted); margin-bottom: 20px; font-weight: 500; }
+    .payment-options { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; max-width: 600px; margin: 0 auto; }
+    .payment-option { display: inline-flex; align-items: center; gap: 8px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 20px; text-decoration: none; color: var(--text); font-size: 14px; font-weight: 500; transition: border-color 0.2s; }
+    .payment-option:hover { border-color: var(--accent); color: var(--white); }
+    footer { text-align: center; padding: 32px 24px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+<section class="hero">
+  <div class="badge">Direct Checkout — Instant Access</div>
+  <h1>Stop Overpaying for AI.<br/><span>Get the tools that work.</span></h1>
+  <p class="subtitle">Three focused AI products. Honest pricing. No subscriptions except where it makes sense.</p>
+</section>
+<div class="products">
+  <div class="card featured">
+    <div class="card-badge">Most Popular</div>
+    <div class="card-icon purple">&#10024;</div>
+    <h2>PromptPro</h2>
+    <p>Rewrites your basic prompts into expert-level AI instructions in one click. Works with ChatGPT, Claude, and Gemini.</p>
+    <ul class="features">
+      <li>1-click prompt enhancement</li>
+      <li>Works with all major AI models</li>
+      <li>No prompt engineering experience needed</li>
+      <li>Instant access after purchase</li>
+      <li>Lifetime updates included</li>
+    </ul>
+    <div class="price-block">
+      <div class="price">$9</div>
+      <div class="price-sub">One-time payment &mdash; yours forever</div>
+    </div>
+    <a href="https://paypal.me/icandoanythingagent/9" class="btn btn-primary" target="_blank" rel="noopener">Get PromptPro &mdash; $9 &rarr;</a>
+    <p style="text-align:center;font-size:12px;color:#475569;margin-top:10px">PayPal &bull; Crypto accepted &bull; 30-day guarantee</p>
+  </div>
+  <div class="card">
+    <div class="card-icon cyan">&#9889;</div>
+    <h2>AI Gateway Pro</h2>
+    <p>One API key. Every AI model. Route requests to GPT-4, Claude, Gemini, and Llama through a single unified endpoint.</p>
+    <ul class="features">
+      <li>Unified API for all major LLMs</li>
+      <li>Switch models in one line of code</li>
+      <li>Built-in fallback routing</li>
+      <li>Usage analytics dashboard</li>
+      <li>Cancel anytime</li>
+    </ul>
+    <div class="price-block">
+      <div class="price">$19<span style="font-size:18px;font-weight:500;color:#64748b">/mo</span></div>
+      <div class="price-sub">30-day free trial &mdash; cancel anytime</div>
+    </div>
+    <a href="https://paypal.me/icandoanythingagent/19" class="btn btn-secondary" target="_blank" rel="noopener">Start Free Trial &rarr;</a>
+    <p style="text-align:center;font-size:12px;color:#475569;margin-top:10px">PayPal &bull; Stripe link coming &bull; 30-day guarantee</p>
+  </div>
+  <div class="card">
+    <div class="card-icon green">&#128269;</div>
+    <h2>QuoteCop</h2>
+    <p>AI is spreading fake quotes. QuoteCop instantly verifies any quote against real sources &mdash; verdict in seconds.</p>
+    <ul class="features">
+      <li>Real/fake verdict instantly</li>
+      <li>Source attribution for real quotes</li>
+      <li>Catches AI hallucinations</li>
+      <li>Free tier available</li>
+    </ul>
+    <div class="price-block">
+      <div class="price">Free</div>
+      <div class="price-sub">Free tier + Pro plan available</div>
+    </div>
+    <a href="https://sportaholic000-hue.github.io/quotecop" class="btn btn-outline" target="_blank" rel="noopener">Try QuoteCop Free &rarr;</a>
+  </div>
+</div>
+<div class="guarantee">
+  <h3>30-Day Money-Back Guarantee</h3>
+  <p>If any product does not deliver, email sportaholic000@gmail.com for a full refund. No questions asked.</p>
+</div>
+<div class="alt-payments">
+  <h3>Multiple payment options available</h3>
+  <div class="payment-options">
+    <a href="https://paypal.me/icandoanythingagent" class="payment-option" target="_blank" rel="noopener">PayPal</a>
+    <a class="payment-option" href="mailto:sportaholic000@gmail.com?subject=Purchase%20-%20Crypto&body=I%20want%20to%20pay%20with%20crypto%20for%20[product].">Crypto (ETH/SOL)</a>
+    <a class="payment-option" href="mailto:sportaholic000@gmail.com?subject=Purchase%20Inquiry">Email Us</a>
+  </div>
+  <p style="margin-top:16px;font-size:12px;color:#475569">ETH/Base: 0xAC0320ac14498BA80295ab005f0ba0DC04760e23 | SOL: 47uUqKznBDR4iph1VY6ffzycbfBWSwhkjWWYruf7VsmR</p>
+</div>
+<footer>
+  <p>Questions? <a href="mailto:sportaholic000@gmail.com">sportaholic000@gmail.com</a> &nbsp;|&nbsp; Instant digital delivery &nbsp;|&nbsp; 30-day guarantee</p>
+</footer>
+</body>
+</html>
